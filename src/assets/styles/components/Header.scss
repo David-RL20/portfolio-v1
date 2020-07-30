@@ -1,5 +1,25 @@
-@import '../colors.scss';
+.logo {
+  padding: 1rem 0.7rem;
+  width: 30px;
+}
+header {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+ul {
+  width: calc(120%);
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+li {
+  padding: 5px 8px;
+}
 
-* {
-    background: $background;
+.theme-container{
+  display: flex;
+  align-items: center;
 }
