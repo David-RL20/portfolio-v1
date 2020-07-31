@@ -1,8 +1,7 @@
 import React from 'react';
 import '../assets/styles/components/Footer.scss';
 
-const Footer = () => {
-  const currentTheme = 'dark';
+const Footer = ({ currentTheme }) => {
   return (
     <footer className={`${currentTheme}-theme`}>
       <div>

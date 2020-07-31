@@ -1,19 +1,33 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Header from './Header';
 import Social from './Social';
 import Footer from './Footer';
 
-const Layout = ({ children }) => {
-  const currentTheme = 'dark';
+const Layout = (props) => {
+  console.log(props);
+  const {
+    children,
+    currentTheme,
+    currentLanguage,
+    menuOptions,
+    profile,
+  } = props;
   document.body.classList.add(`${currentTheme}-theme`);
   return (
     <>
-      <Header />
+      <Header
+        currentTheme={currentTheme}
+        currentLanguage={currentLanguage}
+        menuOptions={menuOptions}
+      />
       {children}
-      <Social />
-      <Footer />
+      <Social currentTheme={currentTheme} icons={profile.social} />
+      <Footer currentTheme={currentTheme} currentLanguage={currentLanguage} />
     </>
   );
 };
-
-export default Layout;
+const mapStateToProps = (state) => {
+  return state;
+};
+export default connect(mapStateToProps, null)(Layout);

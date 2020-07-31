@@ -22,6 +22,7 @@ body {
     color: $primary-color;
     border: solid 1px $primary-color;
     border-radius: 5%;
+    margin-left: 3rem;
     &:hover {
       background: $primary-color;
       color: $background-color;
@@ -39,6 +40,7 @@ body {
     color: $primary-color;
     border: solid 1px $primary-color;
     border-radius: 5%;
+    cursor: pointer;
   }
   .slider {
     background-color: $background-color2;
@@ -79,16 +81,20 @@ body {
       }
       line {
         stroke: $secondary-color;
-        fill: $secondary-color; 
+        fill: $secondary-color;
       }
     }
   }
-  .social-images-container{
-    svg{
+  .social-images-container {
+    svg {
       fill: $secondary-color;
-      path{
-        fill: $secondary-color;
+      path {
         stroke: $secondary-color;
+        fill: $secondary-color;
+        &:hover {
+          stroke: $primary-color;
+          fill: $primary-color;
+        }
       }
     }
   }
