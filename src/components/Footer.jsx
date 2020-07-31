@@ -1,7 +1,13 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import '../assets/styles/components/Footer.scss';
+import { setLanguage } from '../actions';
 
-const Footer = ({ currentTheme }) => {
+const Footer = (props) => {
+  const { currentTheme, currentLanguage } = props;
+  const changeLanguage = (language) => {
+    props.setLanguage(language);
+  };
   return (
     <footer className={`${currentTheme}-theme`}>
       <div>
@@ -10,13 +16,23 @@ const Footer = ({ currentTheme }) => {
           @David RL
         </a>
       </div>
-      <div>
-        <p className='available'>Spanish </p>
-        <p>|</p>
-        <p>English </p>
-      </div>
+      {currentLanguage === 'eng' ? (
+        <div>
+          <p className='available' onClick={() => { changeLanguage('esp'); }}>Spanish </p>
+          <p>|</p>
+          <p>English </p>
+        </div>
+      ) : (
+        <div>
+          <p>Español </p>
+          <p>|</p>
+          <p className='available' onClick={() => { changeLanguage('eng'); }}>Ingles </p>
+        </div>
+      )}
     </footer>
   );
 };
-
-export default Footer;
+const mapDispatchToProps = {
+  setLanguage,
+};
+export default connect(null, mapDispatchToProps)(Footer);

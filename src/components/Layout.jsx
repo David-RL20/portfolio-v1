@@ -5,7 +5,6 @@ import Social from './Social';
 import Footer from './Footer';
 
 const Layout = (props) => {
-  console.log(props);
   const {
     children,
     currentTheme,
@@ -13,7 +12,7 @@ const Layout = (props) => {
     menuOptions,
     profile,
   } = props;
-  document.body.classList.add(`${currentTheme}-theme`);
+  document.body.className = (`${currentTheme}-theme`);
   return (
     <>
       <Header

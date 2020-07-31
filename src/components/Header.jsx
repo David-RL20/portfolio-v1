@@ -4,7 +4,7 @@ import ThemeButton from './ThemeButton';
 import '../assets/styles/components/Header.scss';
 import ReactLogo from '../assets/static/logo.svg';
 
-const Header = ({ currentTheme }) => {
+const Header = ({ currentTheme, currentLanguage, menuOptions }) => {
   return (
     <header className={`${currentTheme}-theme`}>
       <div>
@@ -14,13 +14,15 @@ const Header = ({ currentTheme }) => {
       </div>
       <div>
         <ul>
-          <li>About Me</li>
-          <li>Projects</li>
-          <li className='highlight'>Projects</li>
+          {menuOptions.map((option) => {
+            if (option.highlight) return <li key={option[currentLanguage]} className='highlight'>{option[currentLanguage]}</li>;
+
+            return <li key={option[currentLanguage]}>{option[currentLanguage]}</li>;
+          })}
         </ul>
       </div>
       <div className='theme-container'>
-        <div>{currentTheme} </div>
+        <div>{currentTheme}</div>
         <ThemeButton />
       </div>
     </header>

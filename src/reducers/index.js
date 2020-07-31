@@ -5,6 +5,11 @@ const reducer = (state, action) => {
         ...state,
         currentTheme: action.payLoad,
       };
+    case 'SET_LANGUAGE':
+      return {
+        ...state,
+        currentLanguage: action.payLoad,
+      };
 
     default:
       return state;
