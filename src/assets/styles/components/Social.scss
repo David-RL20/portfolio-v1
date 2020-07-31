@@ -1,0 +1,32 @@
+.social-section {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+}
+.svg-container {
+  padding: 0.4rem; 
+  width: 100%;
+  svg {
+    width: 100%;
+    line{
+        stroke-width: 1;
+    }
+  }
+}
+.social-images-container {
+  display: flex;  
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0.4rem;
+  a {
+    width: 100%; 
+    margin-bottom: .4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 80%;
+    }
+  }
+}

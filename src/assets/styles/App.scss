@@ -8,7 +8,7 @@
 }
 body {
   margin: 0em;
-  padding-top: .1rem;
+  padding-top: 0.1rem;
   padding-left: 2rem;
 }
 
@@ -40,15 +40,56 @@ body {
     border: solid 1px $primary-color;
     border-radius: 5%;
   }
-  .slider{
+  .slider {
     background-color: $background-color2;
-    &::before{
+    &::before {
       background-color: $primary-color;
     }
   }
-  .switch{
+  .switch {
     input:checked + .slider {
       background-color: $secondary-color;
+    }
+  }
+  footer {
+    div {
+      color: $secondary-color;
+    }
+
+    .available {
+      color: $font-color;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: $primary-color;
+      }
+    }
+  }
+  a {
+    color: $secondary-color;
+    &:hover {
+      color: $font-color;
+    }
+  }
+  .svg-container {
+    svg {
+      circle {
+        stroke: $secondary-color;
+        fill: $secondary-color;
+      }
+      line {
+        stroke: $secondary-color;
+        fill: $secondary-color; 
+      }
+    }
+  }
+  .social-images-container{
+    svg{
+      fill: $secondary-color;
+      path{
+        fill: $secondary-color;
+        stroke: $secondary-color;
+      }
     }
   }
   color: $font-color;

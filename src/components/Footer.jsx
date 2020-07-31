@@ -1,12 +1,23 @@
 import React from 'react';
 import '../assets/styles/components/Footer.scss';
 
-const Footer = () => (
-  <footer>
-    <a href='/'>Terminos de uso</a>
-    <a href='/'>Declaración de privacidad</a>
-    <a href='/'>Centro de ayuda</a>
-  </footer>
-);
+const Footer = () => {
+  const currentTheme = 'dark';
+  return (
+    <footer className={`${currentTheme}-theme`}>
+      <div>
+        <p>Design and built by</p>
+        <a href='https://github.com/David-RL20' target='_blank'>
+          @David RL
+        </a>
+      </div>
+      <div>
+        <p className='available'>Spanish </p>
+        <p>|</p>
+        <p>English </p>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;
