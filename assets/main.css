@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap);
 .switch{position:relative;display:inline-block;width:45px;height:18px;margin:0 10px}.switch input{opacity:0;width:0;height:0}.slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;-webkit-transition:0.4s;transition:0.4s}.slider:before{position:absolute;content:'';height:13px;width:13px;left:4px;bottom:2.5px;-webkit-transition:0.4s;transition:0.4s}input:checked+.slider:before{-webkit-transform:translateX(24px);-ms-transform:translateX(24px);transform:translateX(24px)}.slider.round{border-radius:34px}.slider.round:before{border-radius:50%}
 
-.logo{padding:1rem 0.7rem;width:30px}header{display:flex;height:70px;width:100%;align-items:center;justify-content:space-between}ul{width:calc(120%);display:flex;list-style-type:none;justify-content:space-between}li{padding:5px 8px}.theme-container{display:flex;align-items:center}
+.logo{padding:1rem 0.7rem;width:30px}header{display:flex;height:70px;width:100%;align-items:center;justify-content:space-between}ul{width:calc(120%);display:flex;list-style-type:none;justify-content:space-between}li{padding:5px 8px}a{text-decoration:none}.theme-container{display:flex;align-items:center}
 
 .social-section{position:fixed;left:0;bottom:0;width:25px}.svg-container{padding:0.4rem;width:100%}.svg-container svg{width:100%}.svg-container svg line{stroke-width:1}.social-images-container{display:flex;flex-wrap:wrap;width:100%;padding:0.4rem}.social-images-container a{width:100%;margin-bottom:.4rem;display:flex;justify-content:center;align-items:center}.social-images-container a svg{width:60%;height:100%;margin:.3rem 0}
 
-footer{display:flex;width:100%;height:50px;z-index:0;flex-wrap:wrap;padding:0.5rem;font-size:10px}footer div{width:100%;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;font-size:10px}footer a{text-decoration:none;font-size:10px;padding-left:.3rem}footer p{font-size:10px;margin:0 .2rem}
+footer{display:flex;width:100%;height:50px;z-index:0;flex-wrap:wrap;padding:0.5rem;font-size:10px}footer div{width:100%;display:flex;flex-wrap:wrap;align-items:center;justify-content:center}footer a{text-decoration:none;font-size:13px;padding-left:.3rem}footer p{font-size:13px;margin:0 .2rem}
 
 .home-container{width:100%;height:500px}
 
