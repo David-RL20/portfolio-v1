@@ -11,8 +11,10 @@ const Layout = (props) => {
     currentLanguage,
     menuOptions,
     profile,
+    footer,
   } = props;
-  document.body.className = (`${currentTheme}-theme`);
+  const { social } = profile;
+  document.body.className = `${currentTheme}-theme`;
   return (
     <>
       <Header
@@ -21,8 +23,16 @@ const Layout = (props) => {
         menuOptions={menuOptions}
       />
       {children}
-      <Social currentTheme={currentTheme} icons={profile.social} />
-      <Footer currentTheme={currentTheme} currentLanguage={currentLanguage} />
+      <Social
+        currentTheme={currentTheme}
+        social={social}
+        icons={profile.social}
+      />
+      <Footer
+        currentTheme={currentTheme}
+        footer={footer}
+        currentLanguage={currentLanguage}
+      />
     </>
   );
 };

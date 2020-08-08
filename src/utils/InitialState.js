@@ -30,9 +30,16 @@ const state = {
   profile: {
     name: 'David Rodriguez',
     position: 'Web development',
+    photo: 'myphoto.png',
+    description_short:
+      'I am a Information Technology engineer from  Tijuana, México, passionate for web development  always looking ways to create things on the last most efficient technology available. I consider everything is possible working hard and doing what you are passionate about.',
     description:
       'I am a Information Technology engineer from  Tijuana, México, passionate for web development  always looking ways to create things on the last most efficient technology available. I consider everything is possible working hard and doing what you are passionate about.',
     technologies: [
+      {
+        name: 'JavaScript',
+        img: 'javascript.svg',
+      },
       {
         name: 'NodeJS',
         img: 'node.svg',
@@ -46,12 +53,20 @@ const state = {
         img: 'html.svg',
       },
       {
+        name: 'CSS3',
+        img: 'css.svg',
+      },
+      {
         name: 'SASS',
         img: 'sass.svg',
       },
       {
-        name: 'CSS3',
-        img: 'css.svg',
+        name: 'PHP',
+        img: 'php.svg',
+      },
+      {
+        name: 'C#',
+        img: 'c#.svg',
       },
     ],
     tools: [
@@ -64,8 +79,8 @@ const state = {
         img: 'vs.svg',
       },
       {
-        name: 'Redux',
-        img: 'redux.svg',
+        name: 'Postman',
+        img: 'postman.svg',
       },
       {
         name: 'Adobe XD',
@@ -86,6 +101,23 @@ const state = {
       },
     ],
     catchphrase: "Let's build the future together", // eslint-disable-line
+  },
+  projects: [
+    {
+      technologie: 'JavaScript',
+      list: [
+        {
+          name: 'Mini Market sales point',
+          description: 'This is the sales description',
+          github_link: '',
+          img: 'store.png',
+        },
+      ],
+    },
+  ],
+  footer: {
+    esp: 'Diseñado y construido por',
+    eng: 'Design and built by',
   },
 };
 

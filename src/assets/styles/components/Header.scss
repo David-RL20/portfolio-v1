@@ -8,6 +8,7 @@ header {
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 ul {
   width: calc(120%);
@@ -17,6 +18,10 @@ ul {
 }
 li {
   padding: 5px 8px;
+  
+}
+a{
+  text-decoration: none;
 }
 
 .theme-container{

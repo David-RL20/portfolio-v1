@@ -1,25 +1,16 @@
 import React from 'react';
-import Linkedin from '../assets/static/linkedin.svg';
 import '../assets/styles/components/Social.scss';
 
-const Social = ({ currentTheme }) => {
+const Social = ({ currentTheme, social }) => {
   return (
     <div className={`${currentTheme}-theme social-section`}>
       <div className='social-images-container'>
-        <a
-          target='_blank'
-          rel='noreferrer'
-          href='https://www.linkedin.com/in/david-alejandro-rodriguez-leal-297a201a8/'
-        >
-          <Linkedin />
-        </a>
-        <a
-          target='_blank'
-          rel='noreferrer'
-          href='https://www.linkedin.com/in/david-alejandro-rodriguez-leal-297a201a8/'
-        >
-          <Linkedin />
-        </a>
+        {/* {social.map(async (item) => {
+          return (
+            <a target='_blank' rel='noreferrer' href={item.link}>
+            </a>
+          );
+        })} */}
       </div>
       <div className='svg-container'>
         <svg width='100' height='100'>

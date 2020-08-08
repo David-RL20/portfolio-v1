@@ -4,21 +4,28 @@ import '../assets/styles/components/Footer.scss';
 import { setLanguage } from '../actions';
 
 const Footer = (props) => {
-  const { currentTheme, currentLanguage } = props;
+  const { currentTheme, currentLanguage, footer } = props;
   const changeLanguage = (language) => {
     props.setLanguage(language);
   };
   return (
     <footer className={`${currentTheme}-theme`}>
       <div>
-        <p>Design and built by</p>
-        <a href='https://github.com/David-RL20' target='_blank'>
+        <p>{footer[currentLanguage]}</p>
+        <a href="https://github.com/David-RL20" target="_blank">
           @David RL
         </a>
       </div>
       {currentLanguage === 'eng' ? (
         <div>
-          <p className='available' onClick={() => { changeLanguage('esp'); }}>Spanish </p>
+          <p
+            className="available"
+            onClick={() => {
+              changeLanguage('esp');
+            }}
+          >
+            Spanish
+          </p>
           <p>|</p>
           <p>English </p>
         </div>
@@ -26,7 +33,14 @@ const Footer = (props) => {
         <div>
           <p>Español </p>
           <p>|</p>
-          <p className='available' onClick={() => { changeLanguage('eng'); }}>Ingles </p>
+          <p
+            className="available"
+            onClick={() => {
+              changeLanguage('eng');
+            }}
+          >
+            Inglés
+          </p>
         </div>
       )}
     </footer>

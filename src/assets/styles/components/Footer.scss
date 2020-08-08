@@ -1,6 +1,6 @@
 footer {
   display: flex;
-  width: 100%;
+  width: calc(100% -.5rem);
   height: 50px;
   z-index: 0;
   flex-wrap: wrap;
@@ -12,15 +12,14 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    font-size: 10px;
   }
   a {
     text-decoration: none;
-    font-size: 10px; 
+    font-size: 13px; 
     padding-left: .3rem;
   }
   p {
-    font-size: 10px;
+    font-size: 13px;
     margin: 0 .2rem;
   }
 }
