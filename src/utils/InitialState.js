@@ -37,36 +37,50 @@ const state = {
       'I am a Information Technology engineer from  Tijuana, México, passionate for web development  always looking ways to create things on the last most efficient technology available. I consider everything is possible working hard and doing what you are passionate about.',
     technologies: [
       {
-        name: 'JavaScript',
-        img: 'javascript.svg',
-      },
-      {
         name: 'NodeJS',
-        img: 'node.svg',
+        logo : '',
       },
       {
         name: 'ReactJS',
-        img: 'reactjs.svg',
+        svg: {
+          dark: 'https://p.kindpng.com/picc/s/263-2632942_transparent-horde-symbol-png-react-js-logo-png.png',
+          ligth: 'https://img.icons8.com/ios-filled/50/000000/react-native.png',
+        },
       },
       {
         name: 'HTML5',
-        img: 'html.svg',
+        svg: {
+          dark: '',
+          ligth: '',
+        },
       },
       {
         name: 'CSS3',
-        img: 'css.svg',
+        svg: {
+          dark: '',
+          ligth: '',
+        },
       },
       {
         name: 'SASS',
-        img: 'sass.svg',
+        svg: {
+          dark: '',
+          ligth: '',
+        },
       },
       {
         name: 'PHP',
-        img: 'php.svg',
+        svg: {
+          dark: '',
+          ligth: '',
+        },
       },
       {
         name: 'C#',
-        img: 'c#.svg',
+        svg: {
+          dark: '',
+          ligth: '',
+        },
       },
     ],
     tools: [

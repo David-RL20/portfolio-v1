@@ -1,0 +1,115 @@
+.dark-theme {
+  $primary-color: #4ff3a7;
+  $secondary-color: #d4d4d4;
+  $background-color: #2e2c2c;
+  $background-color2: #4b4b4b;
+  $font-color: #ffffff;
+  .highlight {
+    color: $primary-color;
+    border: solid 1px $primary-color;
+    border-radius: 5%;
+    margin-left: 3rem;
+    &:hover {
+      background: $primary-color;
+      color: $background-color;
+    }
+  }
+  button {
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    background: $background-color;
+    &:hover {
+      color: $background-color;
+      background: $primary-color;
+    }
+  }
+  li {
+    border: solid 1px $background-color;
+    border-radius: 5%;
+  }
+  li:hover {
+    color: $primary-color;
+    border: solid 1px $primary-color;
+    border-radius: 5%;
+    cursor: pointer;
+  }
+  .slider {
+    background-color: $background-color2;
+    &::before {
+      background-color: $primary-color;
+    }
+  }
+  .switch {
+    input:checked + .slider {
+      background-color: $secondary-color;
+    }
+  }
+  footer {
+    div {
+      color: $secondary-color;
+    }
+
+    .available {
+      color: $font-color;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: $primary-color;
+      }
+    }
+  }
+  a {
+    color: $secondary-color;
+    &:hover {
+      color: $font-color;
+    }
+  }
+  .svg-container {
+    svg {
+      circle {
+        stroke: $secondary-color;
+        fill: $secondary-color;
+      }
+      line {
+        stroke: $secondary-color;
+        fill: $secondary-color;
+      }
+    }
+  }
+  .social-images-container {
+    svg {
+      fill: $secondary-color;
+      path {
+        stroke: $secondary-color;
+        fill: $secondary-color;
+        &:hover {
+          stroke: $primary-color;
+          fill: $primary-color;
+        }
+      }
+    }
+  }
+  .primary-color {
+    color: $primary-color;
+  }
+  .font-2 {
+    color: $background-color2;
+  }
+  .logo-container {
+    svg {
+      stroke: $primary-color;
+      fill: $primary-color;
+      path {
+        stroke: $primary-color;
+        fill: $primary-color;
+      }
+    }
+  }
+  .item-container {
+    p {
+      color: $font-color;
+    }
+  }
+  color: $font-color;
+  background-color: $background-color;
+}

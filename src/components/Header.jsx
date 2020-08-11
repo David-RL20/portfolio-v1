@@ -18,7 +18,6 @@ const Header = ({ currentTheme, currentLanguage, menuOptions }) => {
       <div>
         <ul>
           {menuOptions.map((option) => {
-            console.log(option);
             if (option.highlight) {
               return (
                 <Link key={option[currentLanguage]} to={option.link}>

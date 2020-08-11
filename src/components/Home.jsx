@@ -5,7 +5,14 @@ import '../assets/styles/components/Home.scss';
 
 const Home = (props) => {
   const { currentTheme, profile } = props;
-  const { description_short } = profile;
+  const { description_short, technologies } = profile;
+
+  async function getLogo(name) {
+    const logo = await import(
+      /* webpackMode: "eager" */ `../components/logos/${name}`
+    );
+    return logo;
+  }
   return (
     <div className={`home-container ${currentTheme}-theme`}>
       <div className="main-section">
@@ -25,10 +32,14 @@ const Home = (props) => {
         </div>
       </div>
       <div className="technologies-container">
-        <div className="item-container">
-          <img src="" alt="" />
-          <p></p>
-        </div>
+        {technologies.map((tech) => {
+          return (
+            <div className="item-container" key={tech.name}>
+              <img src={tech.svg[currentTheme]} alt="" />
+              <p>{tech.name}</p>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
