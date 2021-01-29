@@ -29,21 +29,32 @@ const state = {
   ],
   profile: {
     name: 'David Rodriguez',
-    position: 'Web development',
+    intro: {
+      eng: 'Hi, my name is',
+      esp: 'Hola, mi nombre es',
+    },
+    position: {
+      eng: 'Web development',
+      esp: 'Desarrollo Web',
+    },
     photo: 'myphoto.png',
-    description_short:
-      'I am a Information Technology engineer from  Tijuana, México, passionate for web development  always looking ways to create things on the last most efficient technology available. I consider everything is possible working hard and doing what you are passionate about.',
+    description_short: {
+      eng:
+        'I am a Information Technology engineer from  Tijuana, México, passionate for web development  always looking ways to create things on the last most efficient technology available. I consider everything is possible working hard and doing what you are passionate about.',
+      esp: '',
+    },
     description:
       'I am a Information Technology engineer from  Tijuana, México, passionate for web development  always looking ways to create things on the last most efficient technology available. I consider everything is possible working hard and doing what you are passionate about.',
     technologies: [
       {
         name: 'NodeJS',
-        logo : '',
+        svg: 'nodejs.svg',
       },
       {
         name: 'ReactJS',
         svg: {
-          dark: 'https://p.kindpng.com/picc/s/263-2632942_transparent-horde-symbol-png-react-js-logo-png.png',
+          dark:
+            'https://p.kindpng.com/picc/s/263-2632942_transparent-horde-symbol-png-react-js-logo-png.png',
           ligth: 'https://img.icons8.com/ios-filled/50/000000/react-native.png',
         },
       },

@@ -4,8 +4,8 @@ import CheckLogo from '../assets/static/check.svg';
 import '../assets/styles/components/Home.scss';
 
 const Home = (props) => {
-  const { currentTheme, profile } = props;
-  const { description_short, technologies } = profile;
+  const { currentTheme, currentLanguage, profile } = props;
+  const { description_short, technologies, intro, position } = profile;
 
   async function getLogo(name) {
     const logo = await import(
@@ -17,12 +17,14 @@ const Home = (props) => {
     <div className={`home-container ${currentTheme}-theme`}>
       <div className="main-section">
         <div className="name-container">
-          <p className="primary-color">Hi, my name is</p>
+          <p className="primary-color">{intro[currentLanguage]}</p>
           <div className="name-section">
             <p>David Rodriguez</p>
-            <p className="font-2">Web Development</p>
+            <p className="font-2">{position[currentLanguage]}</p>
           </div>
-          <div className="resume-section">{description_short}</div>
+          <div className="resume-section">
+            {description_short[currentLanguage]}
+          </div>
         </div>
         <div className="what-I-done">
           <div className={`${currentTheme}-theme logo-container`}>
@@ -35,7 +37,6 @@ const Home = (props) => {
         {technologies.map((tech) => {
           return (
             <div className="item-container" key={tech.name}>
-              <img src={tech.svg[currentTheme]} alt="" />
               <p>{tech.name}</p>
             </div>
           );
