@@ -139,6 +139,39 @@ const state = {
         },
       ],
     },
+    {
+      technologie: 'JavaScript 2',
+      list: [
+        {
+          name: 'Mini Market sales point',
+          description: 'This is the sales description',
+          github_link: '',
+          img: 'store.png',
+        },
+      ],
+    },
+    {
+      technologie: 'JavaScript 3',
+      list: [
+        {
+          name: 'Mini Market sales point',
+          description: 'This is the sales description',
+          github_link: '',
+          img: 'store.png',
+        },
+      ],
+    },
+    {
+      technologie: 'JavaScript',
+      list: [
+        {
+          name: 'Mini Market sales point',
+          description: 'This is the sales description',
+          github_link: '',
+          img: 'store.png',
+        },
+      ],
+    },
   ],
   footer: {
     esp: 'Diseñado y construido por',

@@ -110,6 +110,18 @@
       color: $font-color;
     }
   }
+  .actived{
+    border:initial;
+    color: $secondary-color;
+    border-bottom: solid 3px $primary-color;
+    padding-bottom: .5rem;
+  }
+  .actived:hover, .selectable:hover {
+    border:initial;
+    color: $secondary-color;
+    border-bottom: solid 3px $primary-color;
+    padding-bottom: .5rem;
+  }
   color: $font-color;
   background-color: $background-color;
 }
