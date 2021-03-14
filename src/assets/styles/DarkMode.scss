@@ -6,9 +6,9 @@
   $font-color: #ffffff;
   .highlight {
     color: $primary-color;
-    border: solid 1px $primary-color;
-    border-radius: 5%;
-    margin-left: 3rem;
+    border: solid 1.5px $primary-color;
+    border-radius: 2px;
+    margin-left: 2rem;
     &:hover {
       background: $primary-color;
       color: $background-color;
@@ -23,14 +23,13 @@
       background: $primary-color;
     }
   }
-  li {
-    border: solid 1px $background-color;
-    border-radius: 5%;
+  header li {
+    border: solid 1.5px $background-color;
+    border-radius: 2px;
   }
-  li:hover {
+  header li:hover {
     color: $primary-color;
-    border: solid 1px $primary-color;
-    border-radius: 5%;
+    border: solid 1.5px $primary-color;
     cursor: pointer;
   }
   .slider {
@@ -112,15 +111,18 @@
   }
   .actived{
     border:initial;
-    color: $secondary-color;
-    border-bottom: solid 3px $primary-color;
-    padding-bottom: .5rem;
+    color: $primary-color;
+    border: solid 1px $primary-color;
+    &:hover{
+      border:initial;
+      color: $primary-color;
+      border: solid 1px $primary-color;
+    }
   }
-  .actived:hover, .selectable:hover {
+   .selectable:hover {
     border:initial;
     color: $secondary-color;
-    border-bottom: solid 3px $primary-color;
-    padding-bottom: .5rem;
+    border-bottom: solid 2px $primary-color;
   }
   color: $font-color;
   background-color: $background-color;

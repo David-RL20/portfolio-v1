@@ -7,7 +7,10 @@ import { connect } from 'react-redux';
 import '../assets/styles/components/ProjectsScreen.scss';
 
 const ProjectsScreen = (props) => {
+  let selectedIndex = 0;
 
+  //Returns 'projects-menu__item actived' if it was the selected
+  //if not returns 'projects-menu__item selectable'
   const getLiClasses = (n, selectedIndex) => {
     const isActive = Boolean(n === parseInt(selectedIndex, 10));
     let classesLi = 'projects-menu__item';
@@ -17,9 +20,15 @@ const ProjectsScreen = (props) => {
     return classesLi;
   };
 
+  //Returns an ul
+  //every li redirects to i
+  //i starts at 0 and increments by 1
+  //i is equal to selectedIndex
+  //every li is encapsulate in a Link component
   const renderTechnologiesMenu = () => {
     let i = 0;
-    const { techI: selectedIndex } = useParams();
+    const { techI } = useParams();
+    selectedIndex = techI;
     return (
       <ul>
         {
@@ -39,10 +48,18 @@ const ProjectsScreen = (props) => {
     );
   };
 
+  const renderTechnologiesContent = () => {
+    console.log(selectedIndex);
+    return <div />;
+  };
+
   return (
     <div className='projects-container'>
-      <div id='projects-container__menu__div'>
+      <div className='projects-container__menu__div'>
         {renderTechnologiesMenu()}
+      </div>
+      <div className='projects-container__content__div'>
+        {renderTechnologiesContent()}
       </div>
     </div>
   );
