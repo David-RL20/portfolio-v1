@@ -1,5 +1,6 @@
 .pdf-container{
     width: calc(100% - 4rem);
+    height: calc(100vh - 3rem - 140px);
     padding: 0rem 2rem;
     display: flex;
     align-items: center;
@@ -7,6 +8,6 @@
 
     .pdf-container__iframe{
         width: 80%;
-        height: 75vh;
+        height: 100%;
     }
 }
