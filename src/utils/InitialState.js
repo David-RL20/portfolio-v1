@@ -140,6 +140,13 @@ const state = {
       ],
     },
   ],
+  resume: {
+    src: {
+      esp: 'http://www.africau.edu/images/default/sample.pdf',
+      eng:
+        'https://drive.google.com/file/d/1X_J5Xk4uCpq81-7hofodYnvc26JwhOW5/preview',
+    },
+  },
   footer: {
     esp: 'Diseñado y construido por',
     eng: 'Design and built by',
