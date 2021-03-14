@@ -38,6 +38,7 @@ const Home = (props) => {
           return (
             <div className="item-container" key={tech.name}>
               <p>{tech.name}</p>
+              <img src={require('../assets/static/'+tech.img[currentTheme])} alt={tech.name}/>
             </div>
           );
         })}

@@ -48,47 +48,49 @@ const state = {
     technologies: [
       {
         name: 'NodeJS',
-        svg: 'nodejs.svg',
+        img: {
+          dark: 'dark_node.png',
+          ligth: 'ligth_node.png',
+        },
       },
       {
         name: 'ReactJS',
-        svg: {
-          dark:
-            'https://p.kindpng.com/picc/s/263-2632942_transparent-horde-symbol-png-react-js-logo-png.png',
-          ligth: 'https://img.icons8.com/ios-filled/50/000000/react-native.png',
+        img: {
+          dark: '',
+          ligth: '',
         },
       },
       {
         name: 'HTML5',
-        svg: {
+        img: {
           dark: '',
           ligth: '',
         },
       },
       {
         name: 'CSS3',
-        svg: {
+        img: {
           dark: '',
           ligth: '',
         },
       },
       {
         name: 'SASS',
-        svg: {
+        img: {
           dark: '',
           ligth: '',
         },
       },
       {
         name: 'PHP',
-        svg: {
+        img: {
           dark: '',
           ligth: '',
         },
       },
       {
         name: 'C#',
-        svg: {
+        img: {
           dark: '',
           ligth: '',
         },
