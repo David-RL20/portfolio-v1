@@ -1,6 +1,10 @@
 
+.projects-container{
+  width: calc(100% - 2rem);
+  height: calc(100vh - 140px - 3rem);
+}
 .projects-container__menu__div{
-  width: calc(100% - 3rem);
+  width: calc(100% - 1rem);
   height: 50px; 
   margin: 0 1rem;
   display: flex;
