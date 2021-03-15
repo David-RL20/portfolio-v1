@@ -14,8 +14,12 @@ const CarouselComponent = (props) => {
   };
   return (
     <div className='carousel-img__container'>
-      <FaArrowLeft className='arrow-icons left-arrow' onClick={prevSlide} />
-      <FaArrowRight className='arrow-icons rigth-arrow' onClick={nextSlide} />
+      <div className='arrow-icons left-arrow center'>
+        <FaArrowLeft onClick={prevSlide} />
+      </div>
+      <div className='arrow-icons rigth-arrow center'>
+        <FaArrowRight onClick={nextSlide} />
+      </div>
       {
         props?.images.map((img, index) => {
           if (index === current) {
