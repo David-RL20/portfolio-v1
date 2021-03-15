@@ -1,12 +1,12 @@
 import React from 'react';
 import {
   Link,
-  useParams,
+  useLocation,
 } from 'react-router-dom';
 import { connect } from 'react-redux';
 import '../assets/styles/components/ProjectsScreen.scss';
-import Carrousel from './Carousel';
 import { FaGithub } from 'react-icons/fa';
+import Carrousel from './Carousel';
 
 const ProjectsScreen = (props) => {
   let selectedIndex = 0;
@@ -21,6 +21,9 @@ const ProjectsScreen = (props) => {
 
     return classesLi;
   };
+  const useQuery = () => {
+    return new URLSearchParams(useLocation().search);
+  };
 
   //Returns an ul
   //every li redirects to i
@@ -29,7 +32,8 @@ const ProjectsScreen = (props) => {
   //every li is encapsulate in a Link component
   const renderTechnologiesMenu = () => {
     let i = 0;
-    const { techI } = useParams();
+    const query = useQuery();
+    const techI = query.get('techI');
     selectedIndex = techI;
     return (
       <ul>
@@ -38,7 +42,7 @@ const ProjectsScreen = (props) => {
             i++;
             const classesLi = getLiClasses(i, selectedIndex);
             return (
-              <Link key={`menu-link__${ele.technologie}${i}`} to={`/Projects/${i}`}>
+              <Link key={`menu-link__${ele.technologie}${i}`} to={`/Projects?techI=${i}`}>
                 <li key={`menu-link__li__${ele.technologie}`} className={classesLi}>
                   {ele.technologie}
                 </li>
@@ -52,7 +56,6 @@ const ProjectsScreen = (props) => {
 
   const renderTechnologiesContent = () => {
     const project = props?.projects[selectedIndex - 1];
-    console.log(project);
     return (
       <>
         {
