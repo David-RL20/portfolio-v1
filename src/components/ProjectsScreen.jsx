@@ -62,7 +62,7 @@ const ProjectsScreen = (props) => {
                 <Carrousel images={ele.images} />
                 <div className='project-wrapper__detail'>
                   <h4 className='project-wrapper__title center'>{ele?.name}</h4>
-                  <a className='github-logo__container center' target='_blank' rel='noreferrer' href={ele.github_link}>
+                  <a className='github-logo__container ' target='_blank' rel='noreferrer' href={ele.github_link}>
                     <FaGithub className='github-logo' />
                   </a>
                   <p className='project-description'>{ele.description}</p>

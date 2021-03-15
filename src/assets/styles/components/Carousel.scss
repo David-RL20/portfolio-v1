@@ -23,18 +23,20 @@
   &:hover{
     z-index: 10;
      animation: bringToFront .5s ease-in;
+     transform: scale(1.2,1.1);
      cursor: pointer;
     .arrow-icons{
       z-index: 11;
     }
   }
   .arrow-icons{
-    font-size: 25px;
+    font-size: 15pt;
     z-index: 1;
   }
   .left-arrow{ 
     grid-column: 2;
     grid-row: 8;
+    padding-left: .6rem;
   }
   .rigth-arrow{
      grid-column: 9;
