@@ -121,8 +121,10 @@
   }
    .selectable:hover {
     border:initial;
-    color: $secondary-color;
     border-bottom: solid 2px $primary-color;
+  }
+  .arrow-icons{
+    color: $background-color2;
   }
   color: $font-color;
   background-color: $background-color;

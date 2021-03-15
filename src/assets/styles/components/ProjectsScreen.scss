@@ -1,6 +1,6 @@
 
 .projects-container{
-  width: calc(100% - 2rem);
+  width: 100%;
   height: calc(100vh - 140px - 3rem);
 }
 .projects-container__menu__div{
@@ -29,5 +29,15 @@
   }
   .actived{ 
     border-radius: initial;
+  }
+}
+.projects-container__content__div{
+  width: 100%;
+  height: calc(100% - 50px);
+  display: grid;
+  
+  .carousel-item{
+    width: 100%;
+    height: 100%;
   }
 }

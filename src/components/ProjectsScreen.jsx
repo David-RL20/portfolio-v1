@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 import { connect } from 'react-redux';
 import '../assets/styles/components/ProjectsScreen.scss';
+import Carrousel from './Carousel';
 
 const ProjectsScreen = (props) => {
   let selectedIndex = 0;
@@ -49,8 +50,16 @@ const ProjectsScreen = (props) => {
   };
 
   const renderTechnologiesContent = () => {
-    console.log(selectedIndex);
-    return <div />;
+    const project = props?.projects[selectedIndex - 1];
+    return (
+      <div>
+        {
+          project?.list.map((ele) => {
+            return <Carrousel key={project.technologie} images={ele.images} />;
+          })
+        }
+      </div>
+    );
   };
 
   return (
