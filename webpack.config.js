@@ -53,7 +53,7 @@ module.exports = {
     ],
   },
   devServer: {
-    historyApiFallback: false,
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebPackPlugin({

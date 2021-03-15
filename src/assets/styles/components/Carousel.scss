@@ -1,0 +1,49 @@
+.carousel-img__container{
+    width: 89%;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    grid-column: 2 / span 9;
+    grid-row: 1 / span 10;
+
+  .carousel-container__img{
+    width: 100%;
+    height: 100%;
+    grid-column: 1/ 10 span;
+    grid-row: inherit;
+    z-index: 0;
+  }
+  @keyframes bringToFront { 
+    
+    0% {
+      opacity: .2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  &:hover{
+    z-index: 10;
+     animation: bringToFront .7s ease-in;
+     transform: scale(1.2,1.1);
+     cursor: pointer;
+    .arrow-icons{
+      z-index: 11;
+    }
+  }
+  .arrow-icons{
+    font-size: 1pt;
+    margin-top: 1rem;
+  }
+  .left-arrow{ 
+    grid-column: 2;
+    grid-row: 9;
+    margin-right: 1rem;
+  }
+  .rigth-arrow{
+     grid-column: 9;
+    grid-row: 9;
+    margin-left: 1rem;
+  }
+}
