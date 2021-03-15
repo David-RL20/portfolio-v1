@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import '../assets/styles/components/Carousel.scss';
+
 const CarouselComponent = (props) => {
   const [current, setCurrent] = useState(0);
   const length = props?.images.length - 1;
@@ -13,7 +14,6 @@ const CarouselComponent = (props) => {
   };
   return (
     <div className='carousel-img__container'>
-      <div className='test' />
       <FaArrowLeft className='arrow-icons left-arrow' onClick={prevSlide} />
       <FaArrowRight className='arrow-icons rigth-arrow' onClick={nextSlide} />
       {
@@ -26,7 +26,7 @@ const CarouselComponent = (props) => {
         })
       }
     </div>
-  )
+  );
 };
 
 

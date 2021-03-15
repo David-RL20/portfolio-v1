@@ -134,7 +134,7 @@ const state = {
         {
           name: 'Mini Market sales point',
           description: 'This is the sales description',
-          github_link: '',
+          github_link: 'https://github.com/',
           images: [
             {
               src:
@@ -153,6 +153,10 @@ const state = {
       ],
     },
   ],
+  github_src: {
+    dark: 'https://ibb.co/M6Y1dJZ',
+    light: 'https://ibb.co/kGkYyDf',
+  },
   footer: {
     esp: 'Diseñado y construido por',
     eng: 'Design and built by',

@@ -126,6 +126,18 @@
   .arrow-icons{
     color: $background-color2;
   }
+  .project-wrapper__detail{
+    background: $background-color2;
+    .project-wrapper__title{
+      color: $primary-color;
+    }
+    .github-logo{
+      color: $secondary-color;
+    }
+    .project-description{
+      color: $font-color;
+    }
+  }
   color: $font-color;
   background-color: $background-color;
 }

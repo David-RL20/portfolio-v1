@@ -6,6 +6,7 @@ import {
 import { connect } from 'react-redux';
 import '../assets/styles/components/ProjectsScreen.scss';
 import Carrousel from './Carousel';
+import { FaGithub } from 'react-icons/fa';
 
 const ProjectsScreen = (props) => {
   let selectedIndex = 0;
@@ -51,14 +52,26 @@ const ProjectsScreen = (props) => {
 
   const renderTechnologiesContent = () => {
     const project = props?.projects[selectedIndex - 1];
+    console.log(project);
     return (
-      <div>
+      <>
         {
           project?.list.map((ele) => {
-            return <Carrousel key={project.technologie} images={ele.images} />;
+            return (
+              <div key={project.technologie} className='project-wrapper'>
+                <Carrousel images={ele.images} />
+                <div className='project-wrapper__detail'>
+                  <h4 className='project-wrapper__title center'>{ele?.name}</h4>
+                  <a className='github-logo__container center' target='_blank' rel='noreferrer' href={ele.github_link}>
+                    <FaGithub className='github-logo' />
+                  </a>
+                  <p className='project-description'>{ele.description}</p>
+                </div>
+              </div>
+            );
           })
         }
-      </div>
+      </>
     );
   };
 
