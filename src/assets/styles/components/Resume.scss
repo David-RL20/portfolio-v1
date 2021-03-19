@@ -1,9 +1,13 @@
 .pdf-container{
     width: calc(100% - 4rem);
-    padding: 2rem;
-    height: 1100px;
-    embed{
-        width: 100%;
+    height: calc(100vh - 3rem - 140px);
+    padding: 0rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .pdf-container__iframe{
+        width: 80%;
         height: 100%;
     }
 }

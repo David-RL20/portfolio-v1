@@ -2,11 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://david-rl20.github.io/portfolio-v1",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "npm run build",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development"
   },
@@ -19,6 +17,7 @@
     "md5": "^2.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-icons": "^4.2.0",
     "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",

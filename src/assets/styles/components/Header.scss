@@ -17,7 +17,7 @@ ul {
   justify-content: space-between;
 }
 li {
-  padding: 5px 8px;
+  padding: 7px 10px;
   
 }
 a{
@@ -27,4 +27,7 @@ a{
 .theme-container{
   display: flex;
   align-items: center;
+}
+.highlight{
+  margin-left: 3rem;
 }
