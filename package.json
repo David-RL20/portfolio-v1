@@ -2,11 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://david-rl20.github.io/portfolio-v1",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "npm run build",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development"
   },
